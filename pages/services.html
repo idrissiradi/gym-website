@@ -4,21 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lux fitness Gym</title>
+    <link rel="stylesheet" href="../styles/styled.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar Section -->
+
     <nav class="navbar">
       <a href="/" class="navbar__logo">LUX</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span> <span class="bar"></span>
         <span class="bar"></span>
-        <div class="navbar__menu">
-          <a href="/" class="navbar__link">Home</a>
-          <a href="/services.html" class="navbar__link">Services</a>
-          <a href="/plans.html" class="navbar__link">Plans</a>
-          <a href="/trainers.html" class="navbar__link">Trainers</a>
-        </div>
+      </div>
+      <div class="navbar__menu">
+        <a href="/" class="navbar__link">Home</a>
+        <a href="/pages/services.html" class="navbar__link">Services</a>
+        <a href="/pages/plans.html" class="navbar__link">Plans</a>
+        <a href="/pages/trainers.html" class="navbar__link">Trainers</a>
       </div>
     </nav>
+
+    <!-- Service Section -->
+
+    <div class="services">
+      <div class="services__container">
+        <div>
+          <p class="topline animate-services">Features</p>
+          <h1 class="services__heading animate-services">What We Offer</h1>
+          <div class="services__features">
+            <p class="services__feature animate-services">
+              <i class="fas fa-check-circle"></i> Group Fitness Classes
+            </p>
+            <p class="services__feature animate-services">
+              <i class="fas fa-check-circle"></i> Personal Trainer Sessions
+            </p>
+            <p class="services__feature animate-services">
+              <i class="fas fa-check-circle"></i> Indoor Pool
+            </p>
+            <p class="services__feature animate-services">
+              <i class="fas fa-check-circle"></i> Steams Room and Sauna
+            </p>
+            <p class="services__feature animate-services">
+              <i class="fas fa-check-circle"></i> Basketball Court
+            </p>
+            <p class="services__feature animate-services">
+              <i class="fas fa-check-circle"></i> Open 24/7
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="/images/gym-2.jpg"
+            alt="gym"
+            class="services__img animate-img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <div class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__desc">
+          <h1>LUX FITNESS</h1>
+          <p>Luxury fitness gym located in downtown Miami.</p>
+          <p id="phone">385 - 123 - 4567</p>
+        </div>
+        <div class="footer__links">
+          <h2 class="footer__title">Contact Us</h2>
+          <a href="/pages/services.html" class="footer__link">Contact</a>
+          <a href="/pages/services.html" class="footer__link">Support</a>
+          <a href="/pages/services.html" class="footer__link">Sponsorships</a>
+        </div>
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer__links">
+          <h2 class="footer__title">Memberships</h2>
+          <a href="/" class="footer__link">Pricing</a>
+          <a href="/" class="footer__link">Plans</a>
+          <a href="/" class="footer__link">FAQ</a>
+        </div>
+        <div class="footer__links">
+          <h2 class="footer__title">Social Media</h2>
+          <a href="/" class="footer__link">Instagram</a>
+          <a href="/" class="footer__link">Facebook</a>
+          <a href="/" class="footer__link">Youtube</a>
+          <a href="/" class="footer__link">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
